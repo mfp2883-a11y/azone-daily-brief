@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>每日自動化訊息預覽（最新版）</title>
+<style>
+  body { background:#1c2a3a; font-family:-apple-system,'Helvetica Neue',sans-serif; padding:20px; margin:0; }
+  .label { color:#7fb3d3; font-size:12px; margin:28px 0 6px 4px; letter-spacing:0.5px; font-weight:600; text-transform:uppercase; }
+  .time  { color:#4a7a9b; font-size:11px; margin-left:6px; }
+  .bubble {
+    background:#2b5278; color:#e8e8e8;
+    border-radius:12px 12px 12px 4px;
+    padding:12px 14px; max-width:420px;
+    font-size:13.5px; line-height:1.65;
+    white-space:pre-wrap; word-break:break-word;
+    box-shadow:0 2px 6px rgba(0,0,0,0.5); margin-bottom:4px;
+  }
+  b { color:#ffffff; }
+  hr { border:none; border-top:1px solid #2a4060; margin:32px 0 8px; }
+</style>
+</head>
+<body>
+
+<!-- ── 1. 08:20 早盤快報 ── -->
+<div class="label">08:20 早盤快報（單則訊息）<span class="time">每交易日</span></div>
+<div class="bubble">📌 <b>早盤快報 2026-06-25　08:20</b>
+🌡️ VIX 18.5(正常)　台指期23,150（+0.87%）
+🎯 ⬆️ 跳空高開　【開高走高】
+🪙 正2：00631L📈+1.02%  00685L📈+0.80%
+━━━━━━━━━━━━━━━━━━━━
+
+【🌙 美股昨收】
+  📈 S&amp;P500      5,487.0　+0.82%
+  📈 那斯達克     17,862.2　+1.14%
+  📉 費城半導體    3,201.5　-0.33%
+  📈 道瓊        39,118.9　+0.60%
+  🌡️ VIX 18.5（正常）
+  📈 台積電ADR　183.20　+1.23%
+  📈 輝達　128.30　+2.10%
+  ⛽ 油價　$78.50　+0.45%
+
+【⏳ 美股期貨】
+  標普期 +0.26%　那指期 +0.33%　道瓊期 +0.21%
+
+【🌏 亞股早盤】
+  📈 日經225　39,245　+1.21%
+  📈 韓股KOSPI　2,748　+0.88%
+
+【🏝️ 台灣市場】
+  📈 台指期　23,150　+0.87%
+  💱 美元/台幣　32.145
+
+【🧲 三大法人台指期（5日）】
+  外資 +8,432口　投信 +120口　自營 -50口
+  3日偏多 ／ 5日偏多 → <b>偏多</b>
+
+【🪙 正2 ETF】
+  📈 00631L 元大台灣50正2　44.32　+1.02%
+  📈 00685L 群益臺灣加權正2　319.50　+0.80%
+
+━━━━━━━━━━━━━━━━━━━━
+🤖 <b>AI 整合研判</b>
+📰 重點新聞：
+• [利多📈] 聯準會暗示9月可能降息，通膨持續降溫
+• [利多📈] 台積電7月營收預估年增30%，AI晶片需求強勁
+• [利率🏦] Fed 官員重申不急於調整利率路徑
+
+📊 大盤方向：【偏多】
+🔑 最關鍵訊號：台積電ADR+1.23%，台指期跳漲逾200點
+
+🎯 今日台股研判：
+  開盤定位：⬆️【跳空高開（台指期+0.87%）】
+  走勢預判：【開高走高】
+  原因：美股三大指數齊漲、法人連續偏多，多頭動能延續
+
+🔥 三雄建議：
+  00631L：【進場】　台指期站上23000，槓桿效益最大
+  00685L：【加碼】　MA5站上MA20，短線多頭確認
+  大盤支撐/壓力：22,900 / 23,400
+
+🛡️ 槓桿建議（依50/50策略，考慮VIX/期貨/法人）：
+  等級：【🌱4】　建議持倉比例：60%
+  提示：趨勢行情複利效益啟動，勿在盤整期持有，BIAS20超10%減碼
+━━━━━━━━━━━━━━━━━━━━</div>
+
+<hr>
+
+<!-- ── 2. 08:20 多頭衝刺 GapUpChaseEngine 卡片 ── -->
+<div class="label">08:20 多頭衝刺追擊卡片（R1 GapUpChaseEngine）<span class="time">跳空高開時觸發</span></div>
+<div style="background:#1a233a;color:#e2e8f0;padding:25px;border-radius:16px;font-family:-apple-system,sans-serif;max-width:600px;box-shadow:0 4px 20px rgba(73,184,110,0.15);border:2px solid #49b86e;margin:20px auto;">
+    <h3 style="color:#49b86e;margin-top:0;border-bottom:2px solid #23382b;padding-bottom:12px;font-size:1.3em;">
+        🚀 早盤快報：多頭衝刺模式啟動（台指期跳高 200 點 / 法人偏多）
+    </h3>
+    <div style="background:#182d21;padding:15px;border-radius:8px;margin-bottom:15px;border-left:4px solid #49b86e;">
+        <span style="color:#a6e3a1;font-weight:bold;font-size:1.1em;">🤖 三雄戰術官：今日開盤 30 秒核心動作</span>
+        <br><strong style="color:#fff;font-size:1.25em;display:block;margin-top:5px;">🔥 開盤立即買入：<span style="color:#a6e3a1;">17,999 元</span>（目標曝險調升至 60%）</strong>
+        <small style="color:#b4bbc6;display:block;margin-top:5px;">策略提示：溫和跳空，分批進場，等5分K確認</small>
+    </div>
+    <table style="width:100%;border-collapse:collapse;margin-bottom:15px;background:#1e2538;border-radius:8px;overflow:hidden;font-size:0.95em;">
+        <thead><tr style="background:#283149;color:#b5bbcb;border-bottom:1px solid #3b4261;">
+            <th style="padding:10px;text-align:left;">全球連動與多空關鍵指標</th>
+            <th style="padding:10px;text-align:center;">盤前走勢數據</th>
+            <th style="padding:10px;text-align:right;">買氣熱度與防線狀態</th>
+        </tr></thead>
+        <tbody>
+            <tr style="border-bottom:1px solid #3b4261;"><td style="padding:10px;font-weight:bold;">🇺🇸 美股台積電 (ADR) 昨收</td><td style="padding:10px;text-align:center;color:#a6e3a1;">📈 強勢上漲（+1.23%）</td><td style="padding:10px;text-align:right;color:#a6e3a1;">晶片需求強勁 / 帶動大盤跳空</td></tr>
+            <tr style="border-bottom:1px solid #3b4261;"><td style="padding:10px;font-weight:bold;">🇹🇼 台灣期貨盤前定位</td><td style="padding:10px;text-align:center;color:#a6e3a1;">🚀 跳空高開（0.87%）</td><td style="padding:10px;text-align:right;color:#73daca;">預期走勢：【開高走高】</td></tr>
+            <tr style="border-bottom:1px solid #3b4261;"><td style="padding:10px;font-weight:bold;">👻 大盤恐慌指數（VIX）</td><td style="padding:10px;text-align:center;color:#73daca;">18.5（正常）</td><td style="padding:10px;text-align:right;color:#73daca;">處於【低恐慌】安全多頭格局</td></tr>
+            <tr><td style="padding:10px;font-weight:bold;">🦊 外資期貨籌碼（5日）</td><td style="padding:10px;text-align:center;color:#a6e3a1;">多單 +8,432 口</td><td style="padding:10px;text-align:right;color:#a6e3a1;">綜合評估：【短中線全面偏多】</td></tr>
+        </tbody>
+    </table>
+    <div style="background:#1e2538;padding:12px;border-radius:8px;margin-bottom:15px;font-size:0.9em;color:#c0caf5;">
+        <strong style="color:#7aa2f7;display:block;margin-bottom:5px;">🛡️ 盤中防禦低接掛單（剩餘資金守備）</strong>
+        • 第一道防線（拉回平盤）：掛 <strong>22988.9 元</strong> 委託買入 <strong>7,199 元</strong><br>
+        • 第二道防線（急殺回補）：掛 <strong>22847.9 元</strong> 委託買入 <strong>4,799 元</strong>
+    </div>
+    <div style="font-size:0.85em;color:#565f89;background:#141b2e;padding:10px;border-radius:6px;text-align:center;">
+        💡 <strong>風控撤退防線：</strong>若盤中爆量長黑跌破昨收，立即撤銷所有低接掛單，回歸 50/50 觀望狀態。
+    </div>
+</div>
+
+<hr>
+
+<!-- ── 3. 09:10 持倉再平衡卡片 ── -->
+<div class="label">09:10 持倉再平衡卡片（R1 Portfolio50Rebalance）<span class="time">每交易日</span></div>
+<div style="background:#111827;color:#f9fafb;padding:25px;border-radius:16px;font-family:-apple-system,sans-serif;max-width:600px;box-shadow:0 4px 20px rgba(59,130,246,0.15);border:1px solid #3b82f6;margin:20px auto;">
+    <h3 style="color:#3b82f6;margin-top:0;border-bottom:2px solid #1f2937;padding-bottom:12px;font-size:1.3em;">
+        💼 09:10 開盤再平衡強制指令（台股持倉資產總覽）
+    </h3>
+    <div style="background:#1e1b4b;padding:15px;border-radius:8px;margin-bottom:15px;border-left:4px solid #fbbf24;">
+        <span style="color:#fde047;font-weight:bold;font-size:1.1em;">🤖 三雄戰術官：今日開盤持倉核心診斷</span>
+        <br><strong style="color:#fff;font-size:1.25em;display:block;margin-top:5px;">🔥 今日再平衡動作：<span style="color:#34d399;">BUY（加碼）</span></strong>
+        <strong style="color:#fbbf24;font-size:1.35em;display:block;margin-top:5px;">💵 委託下單金額：2,678,900 元</strong>
+        <small style="color:#94a3b8;display:block;margin-top:5px;">策略提示：正2相對落後，曝險 5.97% < 50%，動用現金買入。</small>
+    </div>
+    <table style="width:100%;border-collapse:collapse;margin-bottom:15px;background:#1f2937;border-radius:8px;overflow:hidden;font-size:0.9em;">
+        <thead><tr style="background:#374151;color:#e5e7eb;border-bottom:1px solid #4b5563;">
+            <th style="padding:8px 10px;text-align:left;">股票名稱</th>
+            <th style="padding:8px 10px;text-align:center;">今日即時市價</th>
+            <th style="padding:8px 10px;text-align:center;">您的平均成本</th>
+            <th style="padding:8px 10px;text-align:right;">累計賺賠幅度</th>
+        </tr></thead>
+        <tbody>
+            <tr style="border-bottom:1px solid #4b5563;"><td style="padding:8px 10px;font-weight:bold;">🟢 元大台灣50正2 (00631L)</td><td style="padding:8px 10px;text-align:center;">44.30 元</td><td style="padding:8px 10px;text-align:center;">38.22 元</td><td style="padding:8px 10px;text-align:right;color:#34d399;font-weight:bold;">+15.9% ▲（獲利奔跑中）</td></tr>
+            <tr style="border-bottom:1px solid #4b5563;"><td style="padding:8px 10px;font-weight:bold;">🟢 群益臺灣加權正2 (00685L)</td><td style="padding:8px 10px;text-align:center;">319.20 元</td><td style="padding:8px 10px;text-align:center;">316.99 元</td><td style="padding:8px 10px;text-align:right;color:#34d399;">+0.7% ▲（買氣穩定）</td></tr>
+            <tr style="border-bottom:1px solid #4b5563;"><td style="padding:8px 10px;font-weight:bold;">🟢 元大台灣50 (0050)</td><td style="padding:8px 10px;text-align:center;">195.30 元</td><td style="padding:8px 10px;text-align:center;">44.35 元</td><td style="padding:8px 10px;text-align:right;color:#34d399;font-weight:bold;">+340.3% ▲（長線大賺 🚀）</td></tr>
+            <tr style="border-bottom:1px solid #4b5563;"><td style="padding:8px 10px;font-weight:bold;">🟢 富邦台灣50 (006208)</td><td style="padding:8px 10px;text-align:center;">103.50 元</td><td style="padding:8px 10px;text-align:center;">97.86 元</td><td style="padding:8px 10px;text-align:right;color:#34d399;">+5.8% ▲（穩定推升）</td></tr>
+            <tr style="border-bottom:1px solid #4b5563;"><td style="padding:8px 10px;font-weight:bold;">🔴 台積電 (2330)</td><td style="padding:8px 10px;text-align:center;">1,025.00 元</td><td style="padding:8px 10px;text-align:center;">2,289.00 元</td><td style="padding:8px 10px;text-align:right;color:#f87171;">-55.2% ▼（含除權息調整*）</td></tr>
+            <tr><td style="padding:8px 10px;font-weight:bold;">🟢 蘇州傳量 (4764)</td><td style="padding:8px 10px;text-align:center;">372.50 元</td><td style="padding:8px 10px;text-align:center;">355.14 元</td><td style="padding:8px 10px;text-align:right;color:#34d399;">+4.9% ▲（小幅獲利）</td></tr>
+        </tbody>
+    </table>
+    <div style="background:#1f2937;padding:12px;border-radius:8px;margin-bottom:15px;font-size:0.9em;color:#e5e7eb;">
+        <strong style="color:#3b82f6;display:block;margin-bottom:5px;">📊 開盤總資產會計結算（Ollama 本地端提供安全檢查）</strong>
+        • 總股票市值 (E)：<strong>3,084,800.0 元</strong><br>
+        • 帳戶現金餘額 (C)：<strong>3,000,000 元</strong><br>
+        • 目前正2雙雄實質曝險 (X)：<strong style="color:#fbbf24;">5.97%</strong>（目標 50%）<br>
+        • <strong>合計帳面總損益</strong>：<span style="color:#34d399;font-weight:bold;">+42,318 元（+29.6%）</span>
+    </div>
+    <div style="font-size:0.8em;color:#6b7280;background:#0b0f19;padding:10px;border-radius:6px;text-align:center;">
+        💡 <strong>風控提示：</strong>本單已自動排除非正2標的干擾。12:30 系統將自動觸發第二次持倉數據再推播。
+    </div>
+</div>
+
+<hr>
+
+<!-- ── 4. 09:10 正2 ETF 風控提示 ── -->
+<div class="label">09:10 正2 ETF 風控提示（有風險才發）<span class="time">槓桿專用</span></div>
+<div class="bubble">⚡ <b>正2 ETF 風控提示</b>
+<b>00631L</b> 現價 32.80（均 38.22）
+  🔻 最大回撤 -14.2%（近高 38.20）
+  📉 連跌 3 天
+<b>00685L</b> 現價 295.00（均 316.99）
+  ⚡ 夜盤跳空 -2.3%（前收 302.00）</div>
+
+<hr>
+
+<!-- ── 5. 盤中跌幅警報 ── -->
+<div class="label">盤中觸發　跌幅警報（-5% / -10% / -20%，各觸發一次）</div>
+<div class="bubble">⚠️ <b>00631L</b> 跌幅 -5% 警報
+現價：36.30　均價：38.22
+跌幅：-5.0%
+
+🤖 <b>是否進場？</b>
+<b>加碼進場</b>
+MA20 在 37.5 形成支撐，RSI 跌至 38 進入超賣。
+建議 36.0–36.5 分批加碼，跌破 35.5 停損。</div>
+
+<!-- ── 6. 盤中漲幅警報 ── -->
+<div class="label">盤中觸發　漲幅警報（+7% / +9% / +12% / +15% / +20%，各觸發一次）</div>
+<div class="bubble">🚀 <b>00631L</b> 漲幅 +15% 警報
+現價：43.96　均價：38.22
+漲幅：+15.0%
+
+🤖 <b>是否停利？</b>
+<b>繼續持有</b>
+RSI 68 尚未超買，MA5 &gt; MA20 &gt; MA60 多頭排列完整。
+建議持有至 RSI 超過 75 或 MA5 下穿 MA20 再減碼，壓力位約 46。</div>
+
+<!-- ── 7. 資料異常警示 ── -->
+<div class="label">盤中觸發　資料異常（雙來源差 &gt;3% 才發，正常不會收到）</div>
+<div class="bubble">📡 <b>資料異常提示</b>
+  ⚠️ 00631L：yf=44.32 vs FinMind=36.10（差22.7%，已切換FinMind）
+
+🔍 系統已自動切換來源，請以推播數值為準，勿手動查詢異常來源。</div>
+
+<hr>
+
+<!-- ── 8. 14:00 收盤報告 ── -->
+<div class="label">14:00 收盤報告 + 正2日報<span class="time">每交易日</span></div>
+<div class="bubble">📉 <b>收盤報告 2026-06-25　14:00</b>
+
+🇹🇼 <b>大盤</b>
+  加權指數　23,108　+0.99%
+  成交量　3,842 億
+
+📊 <b>持倉損益</b>
+  00631L　44.10（+15.4%）　▲ +1,136 元
+  00685L　320.00（+1.0%）　▲ +62 元
+  0050　195.80（+0.8%）　▲ +1,400 元
+  006208　103.80（+1.1%）　▲ +330 元
+  2330　1,028（-55.1%）　▼ -2,522 元
+  4764　375.00（+5.6%）　▲ +298 元
+
+合計：+43,204 元（+30.3%）
+
+⚡ <b>正2雙雄收盤</b>
+
+  <b>00685L 群益加權正2</b>
+  📈 320.00　+1.00%
+  MA5 ✅  MA20 ✅
+  季線(MA60)：317.80 ✅
+  BIAS20：+2.40%　RSI：58.3
+  成交量：8,920張　均量倍數 1.2x　量增價漲✅
+
+  <b>00631L 元大台50正2</b>
+  📈 44.10　+1.02%
+  MA5 ✅  MA20 ✅
+  季線(MA60)：38.12 ✅
+  BIAS20：+5.50%　RSI：64.2
+  成交量：12,450張　均量倍數 1.8x　量增價漲✅
+
+  強弱差：+0.02%  →  00685L較強（中小輪動）
+  台股季線（MA60）21,300：站上✅
+
+🛡️ <b>槓桿ETF知識風控</b>
+  🔄 台指期：正價差 +0.42%（近平水，正常）
+  ⏳ 00631L 波動耗損：✅ 複利加乘 +6.2%（趨勢行情加速）  實際32.1% &gt; 理論25.9%
+  ⏳ 00685L 波動耗損：正常 +1.8%（近20日）
+  ✅ 連漲6日，複利效益啟動（正2報酬可能超過指數2倍）
+
+  📊 槓桿等級建議：🌱 等級4（持倉50-65%）
+  💡 可提升至60%，MA20跌破即停損
+
+🤖 <b>正2 AI 研判</b>
+① 情境：A（均線上+台積強→00631L）
+② 00631L：【可持有】MA5站上MA20，連漲動能完整，觀察45壓力
+③ 00685L：【可持有】中小族群輪動加溫，BIAS20+2.4%尚在安全區
+④ 槓桿建議：【🌱 等級4】VIX18.5低恐慌，多頭確立，可提升至60%曝險
+⑤ 50/50策略：【提高至60%】趨勢行情複利加速，但BIAS20超過10%需立即降回50/50</div>
+
+<hr>
+
+<!-- ── 9. 特殊觸發 黑天鵝防禦卡片 ── -->
+<div class="label">特殊觸發　黑天鵝防禦模式（R1 BlackSwanDefense）<span class="time">VIX急升 / 台股重跌 / 法人連空</span></div>
+<div style="background:#1c1c28;color:#f2f4f8;padding:25px;border-radius:16px;font-family:-apple-system,sans-serif;max-width:600px;box-shadow:0 4px 20px rgba(255,76,76,0.2);border:2px solid #ff4c4c;margin:20px auto;">
+    <h3 style="color:#ff4c4c;margin-top:0;border-bottom:2px solid #3d2424;padding-bottom:12px;font-size:1.3em;">
+        🚨 特殊觸發：最高等級風險警示模式（VIX急升 / 法人連偏空）
+    </h3>
+    <div style="background:#2d1e1e;padding:15px;border-radius:8px;margin-bottom:15px;border-left:4px solid #ff4c4c;">
+        <span style="color:#ff7676;font-weight:bold;font-size:1.1em;">🆘 綜合方向：風險警示（風控核心評分：9 分 / 閥值 6 分）</span>
+        <br><strong style="color:#fff;font-size:1.2em;display:block;margin-top:5px;">🔥 明日開盤強制執行：清倉賣出 363,500 元</strong>
+    </div>
+    <table style="width:100%;border-collapse:collapse;margin-bottom:15px;background:#222235;border-radius:8px;overflow:hidden;font-size:0.95em;">
+        <thead><tr style="background:#2e2e48;color:#b5bbcb;border-bottom:1px solid #3b3b54;">
+            <th style="padding:10px;text-align:left;">全球市場與關鍵指標</th>
+            <th style="padding:10px;text-align:center;">當前多空狀態</th>
+            <th style="padding:10px;text-align:right;">觸發防線與買氣熱度</th>
+        </tr></thead>
+        <tbody>
+            <tr style="border-bottom:1px solid #3b3b54;"><td style="padding:10px;font-weight:bold;">🇹🇼 台灣股市（加權指數）</td><td style="padding:10px;text-align:center;color:#ff7676;">📉 偏空大跌（-3.2%）</td><td style="padding:10px;text-align:right;color:#ff7676;">RSI: 28.5 / ❌ 跌破生命季線</td></tr>
+            <tr style="border-bottom:1px solid #3b3b54;"><td style="padding:10px;font-weight:bold;">🇺🇸 美國股市（S&amp;P500）</td><td style="padding:10px;text-align:center;color:#ff7676;">📉 短線回檔（-2.1%）</td><td style="padding:10px;text-align:right;color:#73daca;">RSI: 28.5 / ✅ 守穩生命季線</td></tr>
+            <tr style="border-bottom:1px solid #3b3b54;"><td style="padding:10px;font-weight:bold;">👻 市場恐慌指數（VIX）</td><td style="padding:10px;text-align:center;color:#ff4c4c;font-weight:bold;">🔥 38.5</td><td style="padding:10px;text-align:right;color:#ff4c4c;font-weight:bold;">💥 觸發【極端恐慌】警報</td></tr>
+            <tr><td style="padding:10px;font-weight:bold;">🦊 法人期貨籌碼</td><td style="padding:10px;text-align:center;color:#ff7676;">空單 -12,000 口</td><td style="padding:10px;text-align:right;color:#ff7676;">🚨 中長線連續偏空佈局</td></tr>
+        </tbody>
+    </table>
+    <div style="background:#24283b;padding:12px;border-radius:8px;margin-bottom:15px;font-size:0.9em;color:#c0caf5;">
+        <strong>🛠️ 系統防禦動作備註：</strong><br>
+        • 帳戶安全狀態：明日開盤市價賣出，不等回測確認<br>
+        • 防禦目標曝險：強制將正2持倉比例壓至 <strong>0%</strong>（幾近全現金防守）。<br>
+        • 🚨 <strong>策略控制阻斷</strong>：系統已全面凍結所有再平衡加碼功能。
+    </div>
+    <div style="font-size:0.85em;color:#565f89;background:#12121a;padding:10px;border-radius:6px;text-align:center;">
+        💡 活躍觸發因子：VIX高恐慌(38) | 台股大跌(-3.2%) | 跌破季線 | 美股大跌(-2.1%) | 外資重砍(-12,000口) | 正2回撤-10%+ | 數據源自動切換機制已就緒
+    </div>
+</div>
+
+</body>
+</html>
